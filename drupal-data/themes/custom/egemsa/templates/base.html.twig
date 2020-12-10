@@ -1,0 +1,157 @@
+{% block previous %}{% endblock %}
+<header id="header">
+  <div class="header-container">
+    <h1 id="logo">
+      <a href="{{ base_path }}">EGEMSA</a>
+    </h1>
+    <div id="toggle-nav">
+      <button class="zero">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <aside id="secondary-nav">
+      <button class="close-nav" type="button"><i class="fas fa-times"></i></button>
+      <figure class="text-center">
+        <img src="{{ base_path ~ directory }}/assets/logo-blanco-texto.svg" alt="EGEMSA">
+      </figure>
+      <div class="search-box">
+        <form action="">
+          <input type="search">
+        </form>
+      </div>
+      <nav>
+        {{ page.secondary_nav }}
+      </nav>
+    </aside>
+    
+    <aside class="header-right">
+      <nav class="nav-right">
+        <ul class="list-unstyled">
+          <li><a href="#" class="transparencia">Transparencia</a></li>
+          <li><a href="#" class="sesion">Inicio de sesión</a></li>
+          <li><a href="#" class="contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+  </div>
+  <nav id="main-nav">
+    {{ page.main_nav }}
+  </nav>
+</header>
+
+{% block main %}{% endblock %}
+
+<footer id="footer" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="eg-icon icon-egemsa-blanco"></div>
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Conózcanos</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Reseña histórica</a></li>
+                <li><a href="#">Visión, misión, valores y principios</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#">Galería</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <h5>Información</h5>
+            <h6>Gestión</h6>
+            <nav>
+              <ul class="">
+                <li><a href="#">Sistema Integrado de Gestión SIG</a></li>
+                <li><a href="#">Sistema de Control Interno</a></li>
+                <li><a href="#">Bueno Gobierno Corporativo</a></li>
+              </ul>
+            </nav>
+            <h6>Sostenibilidad</h6>
+            <nav>
+              <ul class="">
+                <li><a href="#">Gestión Ambiental</a></li>
+                <li><a href="#">Gestión Social</a></li>
+                <li><a href="#">Protocolos Covid-19</a></li>
+              </ul>
+            </nav>
+            <h6>Información adicional</h6>
+            <nav>
+              <ul class="">
+                <li><a href="#">Publicaciones y boletines</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <h5>Qué hacemos</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#">Generación eléctrica</a></li>
+                <li><a href="#">Suministro de energía eléctrica a empresas</a></li>
+                <li><a href="#">Transmisión</a></li>
+              </ul>
+            </nav>
+            <h5>Instalaciones</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#">Central Hidroeléctrica de Machupicchu</a></li>
+                <li><a href="#">Central Térmica de Dolorespata</a></li>
+                <li><a href="#">Represa de Sibinacocha</a></li>
+                <li><a href="#">Talleres de mantenimiento</a></li>
+                <li><a href="#">Líneas de transmisión</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-3">
+            <h5>Contacto</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#">Buzón de sugerencias</a></li>
+                <li><a href="#">Buzón de denuncias</a></li>
+              </ul>
+            </nav>
+
+            <h5>Atención virtual</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="#">Mesa de partes virtual</a></li>
+                <li><a href="#">Libro de reclamaciones</a></li>
+              </ul>
+            </nav>
+
+            <img src="{{ base_path ~ directory }}/assets/iconos/peru.svg" alt="El Perú primero" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="footer-final">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <p>Mapa del sitio</p>
+        </div>
+        <div class="col-md-8">
+          <p class="text-center">Empresa de Generación Eléctrica Machupicchu Sociedad Anónima - EGEMSA 2020  –  ® Todos los derechos reservados</p>
+        </div>
+        <div class="col-md-2">
+          <p class="social-icons">
+            <a href="#" class="social-footer"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-footer"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-footer"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-footer"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-footer"><i class="fab fa-whatsapp"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</footer>

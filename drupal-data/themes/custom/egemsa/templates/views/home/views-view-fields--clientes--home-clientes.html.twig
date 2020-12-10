@@ -1,0 +1,17 @@
+{% set foto = fields.field_foto_cliente.content %}
+{% set texto = fields.body.content %}
+<div class="cliente-item">
+  <div class="row">
+    <div class="col-md-9">
+      <figure>
+        {{ foto }}
+      </figure>
+    </div>
+    <div class="col-md-3">
+      <p class="cliente-text text-small">{{ texto }}</p>
+      <p class="text-right">
+        <a href="#" class="btn-link">Leer más...</a>
+      </p>
+    </div>
+  </div>
+</div>

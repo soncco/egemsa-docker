@@ -1,0 +1,14 @@
+{%
+  set classes = [
+    'paragraph-slider-item'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="paragraph-slider-container">
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

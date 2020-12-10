@@ -1,0 +1,9 @@
+{%
+  set classes = [
+    'nav-item',
+    'nav-link',
+    is_active ? 'active'
+  ]
+%}
+
+<li{{ attributes.addClass(classes) }}>{{ link }}</li>

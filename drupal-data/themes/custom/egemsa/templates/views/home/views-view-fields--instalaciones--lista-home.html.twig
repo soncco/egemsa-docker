@@ -1,0 +1,15 @@
+{% set title = fields.title.content %}
+{% set foto = fields.thumbnail__target_id.content %}
+{% set desc = fields.field_ins_descripcion.content %}
+{% set ubicacion = fields.field_ins_ubicacion.content %}
+<div class="place">
+  <div class="alpha-container" style="background-image: url('{{ foto }}');">
+    <div class="alpha">
+      <h4>{{ title }}</h4>
+      <p>{{ ubicacion }}</p>
+    </div>
+  </div>
+  <div class="noalpha">
+    <p>{{ desc }}</p>
+  </div>
+</div>

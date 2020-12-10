@@ -1,0 +1,12 @@
+db-data/
+drupal-data/files
+drupal-data/modules
+drupal-data/themes/custom/egemsa/js/egemsa.js
+drupal-data/themes/custom/egemsa/css/*
+
+node_modules
+
+.env
+
+.DS_Store
+yarn.lock

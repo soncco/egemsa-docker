@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+$verde: #64AA28;
+$verdeclaro: #44A03F;
+$azul: #004BAF;
+$azulclaro: #0065B0;
+$gris: #565656;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #363233;
+  letter-spacing: .8px;
+  line-height: 1.6rem;
+}
+
+a {
+  color: $verde;
+}

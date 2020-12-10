@@ -1,0 +1,34 @@
+name: EGEMSA
+type: theme
+description: Tema principal del sitio web de EGEMSA
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - egemsa/bootstrap4
+  - egemsa/font-awesome
+  - egemsa/aos
+  - egemsa/slick
+  - egemsa/parallax
+  - egemsa/lity
+  - egemsa/lightbox
+  - egemsa/global-styling
+regions:
+  header: Header
+  main_nav: Menú principal  
+  help: Ayuda
+  content: Content
+  footer: Footer
+
+  home_nosotros: Home Nosotros
+  home_instalaciones: Home Instalaciones
+  home_ins_slider: Home Instalaciones Slider
+  home_clientes: Home Clientes
+  home_resp_fotos: Home Responsabilidad Fotos
+  home_resp_texto: Home Responsabilidad Texto
+  home_ambiente: Home Medio Ambiente
+  home_galeria: Home Galería
+  home_galeria_texto: Home Galería Texto
+  home_texto_publicaciones: Home Texto Publicaciones
+  home_publicaciones: Home Publicaciones
+  home_interes: Home Interés
