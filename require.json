@@ -1,5 +1,6 @@
 {
     "require": {
+        "drupal/admin_toolbar": "^2.4",
         "drupal/backup_migrate": "5.0.0-rc2",
         "drupal/crop": "^2.1",
         "drupal/field_formatter_class": "^1.4",
