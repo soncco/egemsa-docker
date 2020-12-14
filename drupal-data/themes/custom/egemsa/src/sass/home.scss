@@ -160,14 +160,17 @@
 
   @include sm {
     margin-bottom: 40px;
+    img {
+      width: 100%;
+    }
   }
   .home-title {
     position: absolute;
-    top: 230px;
+    top: 20px;
     left: 50px;
     z-index: 2;
     @include sm {
-      top: 280px
+      top: 80%
     }
   }
 
@@ -186,6 +189,12 @@
     margin-top: 1rem;
     @include sm {
       margin-bottom: 1rem;
+    }
+  }
+
+  @include sm {
+    .col-md-6 img {
+      width: 100%;
     }
   }
 

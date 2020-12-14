@@ -579,6 +579,12 @@
     position: relative;
     text-align: right;
     margin: 5rem auto;
+
+    @include sm {
+      width: 100%;
+      text-align: initial;
+    }
+
     h4 {
       color: $verdeclaro;
       font-weight: 300;
@@ -586,6 +592,12 @@
       position: absolute;
       top: 5px;
       left: 0;
+
+      @include sm {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
     }
 
     h5 {
@@ -596,8 +608,12 @@
 
     img {
       width: 70%;
-      height: 500px;
       display: inline-block;
+
+      @include sm {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .text-container:last-child {
@@ -610,6 +626,14 @@
       width: 40%;
       top: 3.5rem;
       box-shadow: -30px 30px 0 rgba(0,0,0,0.5);
+
+      @include sm {
+        position: relative;
+        top: auto;
+        width: auto;
+        box-shadow: none;
+        background-color: #F6F6F6;
+      }
     }
   }
 }

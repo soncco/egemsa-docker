@@ -32,6 +32,13 @@ AOS.init({
       removeAttrs('.cliente-item figure img');
       removeAttrs('.ambiente-img img');
       removeAttrs('.slider-publicaciones .slider-item img');
+      removeAttrs('.main-figure img');
+      removeAttrs('.paragraph-slider-container img');
+
+      if (window.matchMedia("(max-width: 576px)").matches) {
+        removeAttrs('#home-nosotros img');
+        removeAttrs('#home-instalaciones img');
+      }
 
 
       // ***********
@@ -127,7 +134,16 @@ AOS.init({
         slidesToShow: 1,
         variableWidth: true,
         autoplay: true,
-        infinite: false
+        infinite: false,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              variableWidth: false,
+              autoplay: false
+            }
+          }
+        ]
       })
 
       $('.slider-publicaciones').slick({
