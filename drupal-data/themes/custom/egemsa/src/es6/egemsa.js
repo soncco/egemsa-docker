@@ -20,6 +20,20 @@ AOS.init({
         );
       };
 
+      const removeAttrs = (sel) => {
+        $(sel)
+        .removeAttr('width')
+        .removeAttr('height')
+      }
+
+      // ******
+      // Remove attrs.
+      // ******
+      removeAttrs('.cliente-item figure img');
+      removeAttrs('.ambiente-img img');
+      removeAttrs('.slider-publicaciones .slider-item img');
+
+
       // ***********
       // DOM.
       // ***********

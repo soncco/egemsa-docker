@@ -306,6 +306,8 @@
 
     .header-right {
       background: url('../assets/header-right.svg');
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
     }
 
     &.tiny {
