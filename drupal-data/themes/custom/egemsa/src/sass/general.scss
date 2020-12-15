@@ -666,8 +666,15 @@
   width: unset;
 }
 
+.path-search {
+  .title-container {
+    padding-left: 0 !important;
+  }
+}
 
-.path-webform {
+
+.path-webform,
+.path-search {
   #content {
     background: #f1f1eb;
     padding-top: 6rem;

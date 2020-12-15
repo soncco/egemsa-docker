@@ -16,15 +16,15 @@
         <img src="{{ base_path ~ directory }}/assets/logo-blanco-texto.svg" alt="EGEMSA">
       </figure>
       <div class="search-box">
-        <form action="">
-          <input type="search">
+        <form action="/search/node" method="get">
+          <input type="search" name="keys" />
         </form>
       </div>
       <nav>
         {{ page.secondary_nav }}
       </nav>
     </aside>
-    
+
     <aside class="header-right">
       <nav class="nav-right">
         <ul class="list-unstyled">

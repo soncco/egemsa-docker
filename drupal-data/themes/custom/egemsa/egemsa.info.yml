@@ -15,7 +15,8 @@ libraries:
   - egemsa/global-styling
 regions:
   header: Header
-  main_nav: Menú principal  
+  main_nav: Menú principal
+  secondary_nav: Menú secundario
   help: Ayuda
   content: Content
   footer: Footer
