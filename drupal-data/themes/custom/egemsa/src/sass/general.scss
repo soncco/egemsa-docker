@@ -671,7 +671,27 @@
   #content {
     background: #f1f1eb;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
+
+  }
+
+  .js-form-type-radio.form-group {
+    margin-bottom: 0;
+  }
+
+  .title-container {
+    text-align: left;
+    padding-left: 70px;
+    background-repeat: no-repeat;
+    background-size: 54px 54px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-title {
+    background: none;
+    font-size: 28px;
+    padding: 0;
   }
 
   .form-container {
@@ -682,5 +702,22 @@
     border-radius: 1rem;
     border-bottom-left-radius: 0;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+
+    position: relative;
+
+    .icon-egemsa {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    #edit-submit {
+      display: block;
+      width: 40%;
+      margin: auto;
+      margin-top: 20px;
+      background: $azul;
+    }
+
   }
 }

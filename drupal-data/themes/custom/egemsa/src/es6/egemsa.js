@@ -26,6 +26,16 @@ AOS.init({
         .removeAttr('height')
       }
 
+      const iconForm = (form, icon) => {
+        if($(form).length) {
+          $('.title-container')
+            .css(
+              'background-image',
+              `url("/themes/custom/egemsa/assets/iconos/enlace-${icon}.svg")`
+            );
+        }
+      }
+
       // ******
       // Remove attrs.
       // ******
@@ -83,6 +93,12 @@ AOS.init({
 
       // Forms.
       $('.js-form-item').addClass('form-group');
+
+      iconForm('.webform-submission-buzon-de-sugerencias-form', 'buzon1');
+      iconForm('.webform-submission-buzon-de-denuncias-form', 'buzon2');
+      iconForm('.webform-submission-contact-form', 'contactenos');
+      iconForm('.webform-submission-reclamaciones-form', 'libro');
+      iconForm('.webform-submission-mesa-form', 'mesa');
 
       // Galería
 
