@@ -20,6 +20,10 @@ regions:
   help: Ayuda
   content: Content
   footer: Footer
+  footer_1: Footer 1
+  footer_2: Footer 2
+  footer_3: Footer 3
+  footer_4: Footer 4
 
   home_nosotros: Home Nosotros
   home_instalaciones: Home Instalaciones
@@ -33,3 +37,5 @@ regions:
   home_texto_publicaciones: Home Texto Publicaciones
   home_publicaciones: Home Publicaciones
   home_interes: Home Interés
+  home_video: Home Video
+

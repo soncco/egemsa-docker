@@ -100,6 +100,9 @@ AOS.init({
       iconForm('.webform-submission-reclamaciones-form', 'libro');
       iconForm('.webform-submission-mesa-form', 'mesa');
 
+      $('#main-nav li a:contains("Inicio")').html('<i class="fas fa-home"></a>');
+      $('#main-nav li a:contains("Búsqueda")').html('<i class="fas fa-search"></a>');
+
       // Galería
 
       // ***********

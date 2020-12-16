@@ -2,9 +2,7 @@
 
 {% block previous %}
 <aside class="video-container clearfix">
-  <video autoplay muted loop poster="{{ base_path ~ directory }}/assets/fotos/fondo-video.jpg">
-    <source src="https://soncco.com/egemsa/egemsadx43.mp4" type="video/mp4">
-  </video>
+  {{ page.home_video }}
   <div class="footer-video">
     <div class="top-video">
       <figure class="aenor">
