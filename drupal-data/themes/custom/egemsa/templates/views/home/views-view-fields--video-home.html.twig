@@ -1,0 +1,5 @@
+{% set foto = fields.thumbnail__target_id.content %}
+{% set video = fields.field_media_video_file.content %}
+<video autoplay muted loop poster="{{ foto }}">
+  <source src="{{ video }}" type="video/mp4">
+</video>
