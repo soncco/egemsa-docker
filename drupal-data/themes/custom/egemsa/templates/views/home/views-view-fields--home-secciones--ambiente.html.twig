@@ -1,6 +1,9 @@
 {% set title = fields.title.content %}
 {% set foto = fields.field_foto_m_home.content %}
 {% set texto = fields.field_texto_home.content %}
+
+{% set enlace = fields.field_enlace.content %}
+{% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
 <figure class="ambiente-img">
   {{ foto }}
 </figure>
@@ -9,5 +12,5 @@
   {{ texto }}
 </p>
 <p class="text-center">
-  <a href="#">Conocer más...</a>
+  <a href="{{ the_url }}">Conocer más...</a>
 </p>

@@ -1,7 +1,9 @@
 {% set title = fields.title.content %}
-{% set enlace = fields.field_enlace.content %}
 {% set foto = fields.field_foto_m_home.content %}
 {% set texto = fields.field_texto_home.content %}
+
+{% set enlace = fields.field_enlace.content %}
+{% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
 <div class="row">
   <div class="col-md-6 rel">
     <h3 class="home-title" data-aos="fade-right">{{ title }}</h3>
@@ -10,6 +12,6 @@
   <div class="col-md-6">
     <div class="eg-icon icon-egemsa"></div>
     <p>{{ texto }}</p>
-    <p class="text-right"><a href="#">Conocer más...</a></p>
+    <p class="text-right"><a href="{{ the_url }}">Conocer más...</a></p>
   </div>
 </div>

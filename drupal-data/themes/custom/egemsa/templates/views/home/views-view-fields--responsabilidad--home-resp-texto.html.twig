@@ -1,7 +1,10 @@
 {% set texto = fields.field_texto_resp.content %}
+
+{% set enlace = fields.field_enlace.content %}
+{% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
 <div class="slider-item">
   <p>{{ texto }}</p>
   <p class="text-right">
-    <a href="#" class="btn-link">Leer más...</a>
+    <a href="{{ the_url }}" class="btn-link">Leer más...</a>
   </p>
 </div>
