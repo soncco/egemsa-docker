@@ -12,7 +12,7 @@
   }
 
   h1#logo {
-    background-position: 0 -70px;
+    background-position: 0 -90px;
   }
 
 
@@ -66,11 +66,11 @@
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 228px;
-    height: 65px;
+    width: 298px;
+    height: 85px;
     background: url('../assets/logo-sprite.svg') no-repeat top left;
-    background-position: 0 -70px;
-    background-size: 228px 130px;
+    background-position: 0 -90px;
+    background-size: 298px 170px;
     transition: all .5s;
     a {
       display: block;
@@ -284,7 +284,7 @@
       }
 
       h1#logo {
-        background-position: 0 -70px;
+        background-position: 0 -90px;
       }
 
       .header-right {
