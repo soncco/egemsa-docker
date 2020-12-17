@@ -97,6 +97,21 @@
         border: 0;
         box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
         z-index: 1000;
+        ul {
+          left: 90%;
+          top: 50%;
+          display: none;
+
+          li {
+            background: $azul;
+            width: 300px;
+            list-style: none;
+            a {
+              background: $azul;
+              color: white !important;
+            }
+          }
+        }
       }
     }
 
@@ -118,7 +133,7 @@
       > ul {
         display: none;
         background-color: white;
-        li {
+        >li {
           list-style-type: none;
           width: 300px;
           text-align: left;
@@ -129,6 +144,9 @@
 
           &:hover {
             background: $verde;
+            ul {
+              display: block;
+            }
             a {
               color: white;
               font-weight: 500;
