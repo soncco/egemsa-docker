@@ -2,13 +2,18 @@
 {% set foto = fields.thumbnail__target_id.content %}
 {% set desc = fields.field_ins_descripcion.content %}
 {% set ubicacion = fields.field_ins_ubicacion.content %}
+
+{% set enlace = fields.field_enlace_instalacion.content %}
+{% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
 <div class="place">
-  <div class="alpha-container" style="background-image: url('{{ foto }}');">
-    <div class="alpha">
-      <h4>{{ title }}</h4>
-      <p>{{ ubicacion }}</p>
+  <a href="{{ the_url }}">
+    <div class="alpha-container" style="background-image: url('{{ foto }}');">
+      <div class="alpha">
+        <h4>{{ title }}</h4>
+        <p>{{ ubicacion }}</p>
+      </div>
     </div>
-  </div>
+  </a>
   <div class="noalpha">
     <p>{{ desc }}</p>
   </div>
