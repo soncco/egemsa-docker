@@ -153,7 +153,7 @@ AOS.init({
         slidesToShow: 1,
         variableWidth: true,
         autoplay: true,
-        infinite: false,
+        infinite: true, /* Hack Tiny */
         responsive: [
           {
             breakpoint: 576,
