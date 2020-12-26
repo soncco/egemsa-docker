@@ -110,6 +110,13 @@
               background: $azul;
               color: white !important;
             }
+            &:hover {
+              background: darken($azul, 10%);
+              a {
+                background: darken($azul, 10%);
+              }
+            }
+            
           }
         }
       }
@@ -767,4 +774,37 @@
 .icon-container-paragraph {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.urgencia {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 20px;
+  z-index: 999;
+  font-size: 13px;
+  font-weight: 700;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &.urgencia-verde {
+    background: $verdeclaro;
+  }
+
+  &.urgencia-naranja {
+    background: #F77F00;
+  }
+
+  &.urgencia-rojo {
+    background: #B0413E;
+  }
 }

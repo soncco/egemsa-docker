@@ -1,0 +1,8 @@
+{% set color = fields.field_color.content|striptags %}
+{% set texto = fields.field_mensaje.content %}
+
+{% set enlace = fields.field_enlace.content %}
+{% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
+<aside class="urgencia urgencia-{{ color }}">
+  <p>{{ texto }} {% if enlace %}<a href="{{ the_url }}">Saber más.</a>{% endif %}</p>
+</aside>
