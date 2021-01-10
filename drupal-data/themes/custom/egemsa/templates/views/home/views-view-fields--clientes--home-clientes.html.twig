@@ -1,7 +1,7 @@
 {% set foto = fields.field_foto_cliente.content %}
 {% set texto = fields.body.content %}
 
-{% set enlace = fields.field_enlace_cliente.content %}
+{% set enlace = fields.field_enlace.content %}
 {% set the_url = path('entity.node.canonical', {'node': enlace|striptags|number_format }) %}
 <div class="cliente-item">
   <div class="row">
