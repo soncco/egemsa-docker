@@ -28,9 +28,9 @@
     <aside class="header-right">
       <nav class="nav-right">
         <ul class="list-unstyled">
-          <li><a href="#" class="transparencia">Transparencia</a></li>
-          <li><a href="#" class="sesion">Inicio de sesión</a></li>
-          <li><a href="#" class="contacto">Contacto</a></li>
+          <li><a href="http://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=13030" target="_blank" class="transparencia">Transparencia</a></li>
+          <li><a href="https://egemsa.sharepoint.com" target="_blank" class="sesion">Inicio de sesión</a></li>
+          <li><a href="https://correo.egemsa.com.pe/owa" target="_blank" class="contacto">Contacto</a></li>
         </ul>
       </nav>
     </aside>
@@ -39,9 +39,9 @@
   <nav id="main-nav">
     {{ page.main_nav }}
   </nav>
-  {% if page.urgencia %}
-    {{ page.urgencia }}
-  {% endif %}
+    {% if page.urgencia %}
+      {{ page.urgencia }}
+    {% endif %}
 </header>
 
 {% block main %}{% endblock %}

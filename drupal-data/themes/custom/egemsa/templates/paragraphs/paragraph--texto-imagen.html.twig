@@ -1,0 +1,14 @@
+{%
+  set classes = [
+    'row'
+  ]
+%}
+{% block paragraph %}
+  <div class="container">
+    <div{{ attributes.addClass(classes) }}>
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
+{% endblock paragraph %}

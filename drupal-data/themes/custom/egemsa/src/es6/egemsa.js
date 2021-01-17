@@ -74,6 +74,7 @@ AOS.init({
       $('.slider-paragraph').slick({
         dots: true,
         arrows: false,
+        autoplay: true
       })
 
       // Galeria Item page.

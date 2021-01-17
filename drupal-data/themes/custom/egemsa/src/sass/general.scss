@@ -117,7 +117,7 @@
                 background: darken($azul, 10%);
               }
             }
-            
+
           }
         }
       }
@@ -680,6 +680,19 @@
       margin-left: -0.9em;
     }
   }
+
+  h4 {
+    color: $verde;
+    font-weight: 300;
+  }
+
+  h5 {
+    color: black;
+    font-weight: 300;
+  }
+}
+
+.paragraph--type--texto-imagen {
 }
 
 .titulo-galeria {
