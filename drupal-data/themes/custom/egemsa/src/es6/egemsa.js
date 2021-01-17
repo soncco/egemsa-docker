@@ -122,8 +122,10 @@ AOS.init({
         arrows: true,
         mobileFirst: true,
         responsive: [{
-          breakpoint: 576,
-          settings: 'unslick'
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4
+          }
         }]
       });
 

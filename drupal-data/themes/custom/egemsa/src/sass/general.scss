@@ -822,3 +822,58 @@
     background: #B0413E;
   }
 }
+
+.fecha-pub {
+  background: $fondo;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  p {
+    margin: 0;
+  }
+
+  i {
+    color: $verde;
+  }
+}
+
+.noticia-item {
+  border-bottom: 4px solid $verde;
+  margin-bottom: 20px;
+
+  .tag-container a {
+    display: inline-block;
+    background-color: $verde;
+    color: white;
+    padding: 3px 10px;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .date-container {
+    text-align: right;
+    color: $gris;
+  }
+
+  &:hover {
+    border-color: $azul;
+
+    .tag-container a {
+      background: $azul;
+    }
+
+    h3 a {
+      color: $gris;
+    }
+  }
+
+  @include sm {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
