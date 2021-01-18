@@ -19,6 +19,8 @@ regions:
   secondary_nav: Menú secundario
   help: Ayuda
   content: Content
+  sidebar_first: Lado izquierdo
+  sidebar_second: Lado derecho
   footer: Footer
   footer_1: Footer 1
   footer_2: Footer 2
