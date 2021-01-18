@@ -15,7 +15,7 @@
         "drupal/webform": "6.0.0",
         "drupal/youtube": "^1.2",
         "drush/drush": "^10.3",
-        "drush/facets": "^1.6",
-        "drush/redirect": "^1.6"
+        "drupal/facets": "^1.6",
+        "drupal/redirect": "^1.6"
     }
 }
