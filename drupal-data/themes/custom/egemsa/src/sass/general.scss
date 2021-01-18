@@ -821,6 +821,10 @@
   &.urgencia-rojo {
     background: #B0413E;
   }
+
+  @include md {
+    bottom: -120px;
+  }
 }
 
 .fecha-pub {
