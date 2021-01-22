@@ -1,0 +1,22 @@
+
+{% extends "themes/custom/egemsa/templates/base.html.twig" %}
+
+{% block main %}
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="form-container">
+          {{ page.content }}
+          <div class="eg-icon icon-egemsa"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="sidebar-contacto">
+          {{ page.sidebar_second }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
