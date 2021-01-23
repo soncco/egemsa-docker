@@ -7,11 +7,12 @@ base theme: false
 libraries:
   - egemsa/bootstrap4
   - egemsa/font-awesome
-  - egemsa/aos
   - egemsa/slick
   - egemsa/parallax
   - egemsa/lity
   - egemsa/lightbox
+  - egemsa/animatecss
+  - egemsa/wow
   - egemsa/global-styling
 regions:
   header: Header

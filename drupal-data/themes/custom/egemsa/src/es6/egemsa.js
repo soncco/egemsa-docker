@@ -207,10 +207,7 @@
       });
 
 
-      AOS.init({
-        duration: 800,
-        once: true
-      });
+      new WOW().init();
 
     }
   }
