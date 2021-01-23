@@ -756,7 +756,7 @@
     position: relative;
 
     &.contact-form {
-      width: auto
+      width: auto;
     }
 
     @include md {
@@ -786,6 +786,10 @@
       background: $azul;
     }
 
+  }
+
+  #webform-submission-reclamaciones-add-form {
+    padding-bottom: 4rem;
   }
 }
 

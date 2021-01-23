@@ -1,8 +1,3 @@
-AOS.init({
-  duration: 800,
-  once: true
-});
-
 (($, Drupal) => {
   Drupal.behaviors.egemsa = {
     attach: (context, settings)  => {
@@ -212,7 +207,10 @@ AOS.init({
       });
 
 
-
+      AOS.init({
+        duration: 800,
+        once: true
+      });
 
     }
   }
