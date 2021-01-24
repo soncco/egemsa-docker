@@ -889,3 +889,15 @@
     }
   }
 }
+
+.figure-publicaciones {
+  position: relative;
+  text-align: center;
+
+  .tag-publicacion {
+    position: absolute;
+    background: white;
+    color: $azul;
+    box-shadow: 1px 1px 5px rgba($azul, 0.5);
+  }
+}
