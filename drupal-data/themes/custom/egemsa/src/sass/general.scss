@@ -906,16 +906,17 @@
 }
 
 #views-exposed-form-busqueda-busqueda-total {
-	.form-group {
-		flex: auto;
-		input {
-			width: 100%;
-		}
-	}
+  .form-group {
+    flex: auto;
+    input {
+      width: 100%;
+    }
+  }
 }
 
 .facet-item {
-	label {
-	padding-left: 5px;
-}}
+  label {
+    padding-left: 5px;
+  }
+}
 
