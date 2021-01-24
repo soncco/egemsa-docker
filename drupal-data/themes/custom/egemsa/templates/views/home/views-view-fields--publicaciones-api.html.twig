@@ -1,0 +1,10 @@
+{% set foto = fields.field_miniatura.content %}
+{% set title = fields.title.content %}
+{% set tag = fields.field_tipo_publicacion.content %}
+<div class="col-md-4">
+  <figure class="figure-publicacion">
+    {{ foto }}
+    <div class="tag-publicacion">{{ tag }}</div>
+    <figcaption>{{ title }}</figcaption>
+  </figure>
+</div>
