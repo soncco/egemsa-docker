@@ -98,9 +98,15 @@
       iconForm('.webform-submission-mesa-form', 'mesa');
 
       $('#main-nav li a:contains("Inicio")').html('<i class="fas fa-home"></a>');
-      $('#main-nav li a:contains("Búsqueda")').html('<i class="fas fa-search"></a>');
+      $('#main-nav li a:contains("Búsqueda")').html('<i class="fas fa-search"></a>')
+	$('#views-exposed-form-busqueda-busqueda-total').addClass('form-inline shadow-sm bg-light p-2 pt-4 mb-4 rounded-top border');
+	$('#edit-keys').addClass('mr-2');
+	$('#edit-submit-busqueda').addClass('mt-1');
+	$('#edit-submit-publicaciones-api--2').addClass('btn-block');
+	$('#views-exposed-form-publicaciones-api-pagina-pubs').addClass('mb-3');
+	$('.js-facets-checkbox-links').addClass('list-unstyled');
 
-      // Galería
+      // Galería##
 
       // ***********
       // Sliders.

@@ -904,3 +904,18 @@
     padding: 5px 10px;
   }
 }
+
+#views-exposed-form-busqueda-busqueda-total {
+	.form-group {
+		flex: auto;
+		input {
+			width: 100%;
+		}
+	}
+}
+
+.facet-item {
+	label {
+	padding-left: 5px;
+}}
+
