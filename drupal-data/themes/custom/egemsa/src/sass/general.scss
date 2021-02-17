@@ -202,6 +202,25 @@
     transition: visibility 0.3s linear, opacity 0 linear;
   }
 
+  .header-right-mov {
+    @include sm {
+      position: absolute;
+      top: 10px;
+      right: 8px;
+
+      li {
+        background: #80A6D8;
+        padding: 4px 6px;
+        a {
+          color: white;
+        }
+      }
+    }
+    @include mdm {
+      display: none;
+    }
+  }
+
   .header-right {
     position: absolute;
     width: 153px;
@@ -336,6 +355,15 @@
       background: url('../assets/header-right.svg');
       background-repeat: no-repeat;
       background-position: 0px 0px;
+    }
+
+    .header-right-mov {
+      li {
+        background: none;
+        a {
+          text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+      }
     }
 
     &.tiny {
